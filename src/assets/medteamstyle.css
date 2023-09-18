@@ -1,0 +1,626 @@
+@media screen and (min-width: 1081px) {
+    .navbar {
+      background-color: rgb(89, 144, 239);
+      height: 30px;
+      align-items: center;
+    }
+  
+    .navbar2 {
+      background-color: rgb(255, 255, 255);
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .title {
+      margin-left: 150px;
+      height: 27px;
+      color: white;
+      float: left;
+      padding-top: 3px;
+    }
+  
+    .buttons {
+      margin-right: 150px;
+      color: white;
+      background-color: white;
+      display: flex;
+      float: right;
+      float: right;
+    }
+  
+    .button {
+      background-color: rgb(89, 144, 239);
+      margin-left: 2px;
+      height: 27px;
+      padding-top: 3px;
+    }
+  
+    .button2 {
+      background-color: rgb(255, 255, 255);
+      margin-left: 2px;
+      height: 27px;
+      padding-top: 3px;
+    }
+  
+    .edge {
+      background-color: white;
+      height: 30px;
+      width: 2px;
+    }
+  
+    .buttonl {
+      background-color: rgb(89, 144, 239);
+      padding-top: 3px;
+    }
+  
+    .buttons a {
+      color: #ffffff;
+      text-decoration: none;
+  
+      padding: 30px;
+    }
+  
+    .card a {
+      text-decoration: none;
+    }
+  
+    .buttonlist a {
+      color: #000000;
+      text-decoration: none;
+  
+      padding: 30px;
+    }
+  
+    .searchbar {
+      background-color: white;
+      height: 120px;
+    }
+  
+    .button:hover {
+      background-color: rgb(163, 184, 241);
+    }
+  
+    .button2:hover {
+      background-color: rgb(223, 223, 223);
+    }
+  
+    .buttonl:hover {
+      background-color: rgb(163, 184, 241);
+    }
+  
+    .cnlogotext {
+      font-size: 16px;
+      font-family: "STXingkai", serif;
+      color: rgb(89, 144, 239);
+    }
+  
+    .enlogotext {
+      font-size: 1px;
+      font-family: Georgia, serif;
+      display: inline-block;
+      transform: scale(0.5);
+    }
+  
+    #logo {
+      float: left;
+      margin-left: 150px;
+      display: flex;
+    }
+  
+    #logoimg {
+      padding-top: 20px;
+      height: 70px;
+      width: 70px;
+    }
+  
+    #logotext {
+      margin-left: 20px;
+      padding-top: 10px;
+    }
+  
+    .bar7 {
+      background-color: white;
+      float: right;
+      margin-right: 150px;
+    }
+  
+    .bar7 form {
+      height: 42px;
+    }
+  
+    .bar7 input {
+      width: 250px;
+      border-radius: 42px;
+      border: 2px solid #b2b2b2;
+      background: #fdfdfd;
+      transition: 0.3s linear;
+      float: right;
+    }
+  
+    .bar7 input:focus {
+      width: 300px;
+    }
+  
+    .bar7 button {
+      background: none;
+      top: -2px;
+      right: 0;
+    }
+  
+    .bar7 button:before {
+      content: "🔍";
+      font-family: FontAwesome;
+      color: #324b4e;
+    }
+  
+    div.search {
+      padding: 30px 0;
+    }
+  
+    form {
+      position: relative;
+      width: 300px;
+      margin: 0 auto;
+    }
+  
+    input,
+    button {
+      border: none;
+      outline: none;
+    }
+  
+    input {
+      width: 100%;
+      height: 42px;
+      padding-left: 13px;
+    }
+  
+    button {
+      height: 42px;
+      width: 42px;
+      cursor: pointer;
+      position: absolute;
+    }
+  
+    .border {
+      height: 1px;
+      background-color: #b2b2b2;
+    }
+  
+    .buttonlist {
+      display: flex;
+      align-items: center;
+    }
+  
+    .currentposition {
+      height: 24px;
+      background-color: #e4e4e4;
+      padding-top: 1px;
+    }
+  
+    #currentpositiontext {
+      width:220px;
+      margin-left:150px;
+    }
+  
+    .cardcontainer {
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+  
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      /* Adjust as necessary */
+    }
+  
+    .card {
+      width: 23%;
+      /* Adjust as necessary */
+      margin-bottom: 20px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      display: flex;
+    }
+  
+    .card img {
+      width: 100px;
+      height: 150px;
+      border-radius: 5px 5px 0px 0px;
+    }
+  
+    .card-text h2 {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 1080px) {
+    .navbar {
+      background-color: rgb(89, 144, 239);
+      height: 70px;
+      align-items: center;
+    }
+  
+    .navbar2 {
+      background-color: rgb(255, 255, 255);
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .title {
+      margin-left: 150px;
+      height: 27px;
+      color: white;
+      float: left;
+      padding-top: 3px;
+      font-size: 20px;
+    }
+  
+    .buttons {
+      margin-right: 150px;
+      color: white;
+      background-color: white;
+      display: flex;
+      float: right;
+      float: right;
+    }
+  
+    .button {
+      background-color: rgb(89, 144, 239);
+      margin-left: 2px;
+      height: 27px;
+      padding-top: 3px;
+    }
+  
+    .button2 {
+      background-color: rgb(255, 255, 255);
+      height: 27px;
+      padding-top: 3px;
+      width: 400px;
+      justify-content: center;
+      align-content: center;
+    }
+  
+    .edge {
+      background-color: white;
+      height: 30px;
+      width: 2px;
+    }
+  
+    .buttonl {
+      background-color: rgb(89, 144, 239);
+      padding-top: 3px;
+    }
+  
+    .buttons a {
+      color: #ffffff;
+      text-decoration: none;
+  
+      padding: 30px;
+    }
+  
+    .card a {
+      text-decoration: none;
+    }
+  
+    .buttonlist a {
+      color: #000000;
+      text-decoration: none;
+    }
+  
+    .searchbar {
+      background-color: white;
+      height: 200px;
+      align-items: center;
+      display: flex;
+    }
+  
+    .button:hover {
+      background-color: rgb(163, 184, 241);
+    }
+  
+    .button2:hover {
+      background-color: rgb(223, 223, 223);
+    }
+  
+    .buttonl:hover {
+      background-color: rgb(163, 184, 241);
+    }
+  
+    .cnlogotext {
+      font-size: 16px;
+      font-family: "STXingkai", serif;
+      color: rgb(89, 144, 239);
+    }
+  
+    .enlogotext {
+      font-size: 1px;
+      font-family: Georgia, serif;
+      display: inline-block;
+      transform: scale(0.5);
+    }
+  
+    #logo {
+      margin-left: 150px;
+      display: flex;
+      margin: auto;
+    }
+  
+    #logoimg {
+      padding-top: 20px;
+      height: 70px;
+      width: 70px;
+    }
+  
+    #logotext {
+      margin-left: 20px;
+      padding-top: 10px;
+    }
+  
+    .bar7 {
+      background-color: white;
+      display: flex;
+      margin: auto;
+    }
+  
+    .bar7 form {
+      height: 42px;
+    }
+  
+    .bar7 input {
+      width: 300px;
+      border-radius: 42px;
+      border: 2px solid #b2b2b2;
+      background: #fdfdfd;
+      transition: 0.3s linear;
+    }
+  
+    .bar7 input:focus {
+      width: 300px;
+    }
+  
+    .bar7 button {
+      background: none;
+      top: -2px;
+      right: 0;
+    }
+  
+    .bar7 button:before {
+      content: "🔍";
+      font-family: FontAwesome;
+      color: #324b4e;
+    }
+  
+    div.search {
+      padding: 30px 0;
+    }
+  
+    form {
+      position: relative;
+      width: 300px;
+      margin: 0 auto;
+    }
+  
+    input,
+    button {
+      border: none;
+      outline: none;
+    }
+  
+    input {
+      width: 100%;
+      height: 42px;
+      padding-left: 13px;
+    }
+  
+    button {
+      height: 42px;
+      width: 42px;
+      cursor: pointer;
+      position: absolute;
+    }
+  
+    .border {
+      height: 1px;
+      background-color: #b2b2b2;
+    }
+  
+    .currentposition {
+      height: 24px;
+      background-color: #e4e4e4;
+      padding-top: 1px;
+      align-items: left;
+    }
+  
+    #c#currentpositiontext {
+      width:220px;
+      margin-left:150px;
+    }
+  
+    .cardcontainer {
+      margin-left: 150px;
+      margin-right: 150px;
+      justify-items: center;
+      align-items: center;
+    }
+  
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      /* Adjust as necessary */
+    }
+  
+    .card {
+      width: 73%;
+      /* Adjust as necessary */
+      margin: auto;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      display: flex;
+    }
+  
+    .card img {
+      width: 100px;
+      height: 150px;
+      border-radius: 5px 5px 0px 0px;
+    }
+  
+    .card-text h2 {
+      margin-bottom: 10px;
+    }
+  }
+  
+  #physicians {
+    color: rgb(89, 144, 239);
+    margin: 0px;
+    padding-top: 20px;
+  }
+  
+  .boundary {
+    background-color: rgb(89, 144, 239);
+    height: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .name {
+    color: rgb(89, 144, 239);
+    font-size: 20px;
+    margin-left: 7px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  
+  .ocptntitle {
+    margin-top: 3px;
+    background-color: rgb(175, 192, 211);
+    border-radius: 17px;
+    font-size: 10px;
+  
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 7px;
+    margin-left: 10px;
+  }
+  
+  .specialties {
+    margin-left: 7px;
+    font-size: 15px;
+  }
+  
+  .introduction {
+    margin-left: 7px;
+    font-size: 15px;
+  }
+  
+  .seemore {
+    float: right;
+    margin-right: 7px;
+    margin-bottom: 7px;
+  }
+  
+  .ocptntitle2 {
+    margin-top: 3px;
+    background-color: rgb(175, 192, 211);
+    border-radius: 17px;
+    font-size: 10px;
+    height: 20px;
+    width: 120px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 7px;
+    margin-left: 10px;
+  }
+  
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  body {
+    background: #ffffff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .swiper {
+    width: 99vw;
+    height: 35vw;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .ocptntitletext {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  
+  .activated {
+    border-color: #ced3f0;
+    border-bottom: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .deactivated {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+  }
+  
+  .tabbar {
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .selected {
+    height: 2px;
+  }
+  
+  .visible {
+    height: 2px;
+    background-color: rgb(82, 105, 207);
+  }
+  
+  a:hover {
+    cursor: pointer;
+  }
