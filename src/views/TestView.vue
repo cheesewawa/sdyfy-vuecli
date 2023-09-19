@@ -24,13 +24,8 @@
           </p>
         </div>
       </div>
-
-      <div class="search bar7">
-        <form>
-          <input type="text" placeholder="请输入您要搜索的内容..." />
-          <button class="searchbutton" type="submit"></button>
-        </form>
-      </div>
+      <SearchBar :callback="onCallBack"> </SearchBar>
+      <!--  -->
     </div>
 
     <div class="border"></div>
@@ -53,21 +48,18 @@
       <div id="currentpositiontext">您所在的位置： 首页>>医疗团队</div>
     </div>
 
-   
-
-<swiper
+    <swiper
       :options="swiperOption"
       @swiper="onSwiper"
       @slideChange="onSlideChange"
->
-        <swiper-slide><img src="../assets/20210330164308.jpg" /></swiper-slide>
-        <swiper-slide><img src="../assets/20210901174739.jpg" /></swiper-slide>
-        <swiper-slide><img src="../assets/20230505113055.jpg" /></swiper-slide>
-        <div class="swiper-pagination" slot="pagination"></div>
-        <div class="swiper-button-prev" slot="button-prev"></div>
-        <div class="swiper-button-next" slot="button-next"></div>
-
-</swiper>
+    >
+      <swiper-slide><img src="../assets/20210330164308.jpg" /></swiper-slide>
+      <swiper-slide><img src="../assets/20210901174739.jpg" /></swiper-slide>
+      <swiper-slide><img src="../assets/20230505113055.jpg" /></swiper-slide>
+      <div class="swiper-pagination" slot="pagination"></div>
+      <div class="swiper-button-prev" slot="button-prev"></div>
+      <div class="swiper-button-next" slot="button-next"></div>
+    </swiper>
 
     <div id="app">
       <div class="cardcontainer" style="height: 20px"></div>
@@ -101,29 +93,7 @@
         <div v-for="(item, index) in tabNames">
           <div class="card-container" v-if="clickIndex === index">
             <div class="card" v-for="doctor in doctors[index]">
-              <div>
-                <div style="display: flex">
-                  <img :src="doctor.imgsrc" alt="Image 1" />
-
-                  <div class="card-text">
-                    <div style="display: flex">
-                      <p class="name">
-                        {{ doctor.name }}
-                      </p>
-                      <div class="ocptntitle">
-                        <p class="ocptntitletext">{{ doctor.ocptntitle }}</p>
-                      </div>
-                    </div>
-                    <p class="specialties">
-                      专业特长：{{ doctor.specialties }}
-                    </p>
-                    <p class="introduction">
-                      医生简介：{{ doctor.introduction }}
-                    </p>
-                  </div>
-                </div>
-                <div class="seemore"><a href="#">查看更多></a></div>
-              </div>
+              <Card :doctor="doctor"> </Card>
             </div>
           </div>
         </div>
@@ -134,7 +104,6 @@
 </template>
 
 <style>
-
 </style>
 
  
@@ -143,9 +112,21 @@
 import { defineComponent } from "@vue/composition-api";
 import Img1 from "../assets/Image-1.png";
 import Img2 from "../assets/Image-2.png";
-import '../assets/medteamstyle.css'
+import "../assets/medteamstyle.css";
+import Card from "./CardView.vue";
+import SearchBar from "./SearchBar.vue";
 
 export default defineComponent({
+  components: {
+    Card,
+    SearchBar,
+  },
+  props: {
+    aaa: {
+      type: String,
+      default: "请输入",
+    },
+  },
   data() {
     return {
       swiperOption: {
@@ -423,6 +404,10 @@ export default defineComponent({
     tabClik(index) {
       this.clickIndex = index;
       console.log(this.clickIndex);
+    },
+
+    onCallBack(Str){
+      alert("找不到\""+Str+"\"相关的内容")
     },
 
     onSwiper() {},

@@ -15,6 +15,11 @@ export default {
   components: {
     HelloWorld,
     Test
+  },
+  data(){
+    return{
+      placeHolderStr:'请输入名字'
+    }
   }
 }
 </script>
